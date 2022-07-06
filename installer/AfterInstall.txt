@@ -1,1 +1,12 @@
-This is After Install Texts\
+Thank you for installing AutoSubFixer!
+
+To use AutoSubFixer, do the following:
+    1. Right-click on the text file you want to fix.
+    2. Hover on "Send To".
+    3. select "AutoSubFixer (Overwrite)".
+    4. Done! the file is now fixed and ready to use.
+
+Use "AutoSubFixer (Overwrite)" to overwrite the original file. Otherwise, selecting "AutoSubFixer" will create a new file (suffix "-encoded").
+
+Don't forget to visit my repo for updates in the future!
+https://github.com/mmgordon82/AutoSubFixer

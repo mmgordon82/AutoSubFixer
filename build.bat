@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-set VERSION=0.0.1a
+set VERSION=1.0.0
 set OUTPUT=dist
 
 :: Build Parameters
@@ -67,6 +67,9 @@ goto :eof
 :: Usage:
 ::      set GOOS=<OS-TYPE>
 ::      call Build_OS_ARCH <GOARCH> <OS-NAME>
+
+::      # The OS-NAME is the name of the OS, and is used when naming the final zip file. It is mainly used
+::      for renaming darwin (OS-TYPE) to macOS (OS-NAME), creating zip files like AutoSubFixer-macOS-<GOARCH>.zip
 :Build_OS_ARCH
     set GOARCH=%1
     echo [+] Building for %2-%GOARCH%...

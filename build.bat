@@ -6,7 +6,8 @@ set OUTPUT=dist
 
 :: Build Parameters
 set NoGUIWindow=-H=windowsgui
-set LDFLAGS_PARAMETERS=%NoGUIWindow%
+set StripDebugInfo=-s -w
+set LDFLAGS_PARAMETERS=%NoGUIWindow% %StripDebugInfo%
 
 echo.
 echo +--------------------------------+
@@ -21,7 +22,7 @@ echo.
 if ["%LDFLAGS_PARAMETERS%"]==[""] (
     set LDFLAGS_BUILD=
 ) else (
-    set LDFLAGS_BUILD=-ldflags %LDFLAGS_PARAMETERS%
+    set LDFLAGS_BUILD=-ldflags "%LDFLAGS_PARAMETERS%"
 )
 
 :: Remove Previous Build
@@ -35,7 +36,7 @@ echo [+] Building syso files...
 
 :: Create the main executable file
 go build -o %OUTPUT%/AutoSubFixer.exe %LDFLAGS_BUILD%
-
+upx --best %OUTPUT%/AutoSubFixer.exe
 :: Create Setup
 echo [+] Creating setup...
 "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" "/DMyAppVersion=%VERSION%" "/DMyDistFolder=%OUTPUT%" installer\install.iss 1>nul

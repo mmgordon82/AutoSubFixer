@@ -1,2 +1,5 @@
 theme: jekyll-theme-minimal
 show_downloads: true
+title: AutoSubFixer
+logo: /assets/logo.png
+description: Easily auto-detect and correct encoding problems in text files

@@ -1,3 +1,5 @@
+## AutoSubFixer
+
 ## About
 If you live in a country whose language doesn't use the common and well-known latin alphabet, you have probably seen movie players or streamers that couldn't show your subtitles correctly.
 

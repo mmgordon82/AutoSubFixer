@@ -1,7 +1,8 @@
 title: AutoSubFixer
 description: Easily auto-detect and correct encoding problems in text files
 show_downloads: false
-theme: alembic-jekyll-theme
+#theme: alembic-jekyll-theme
+remote_theme: daviddarnes/alembic@main
 plugins:
 - jekyll-sitemap
 - jekyll-mentions

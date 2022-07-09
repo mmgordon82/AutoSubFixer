@@ -1,13 +1,12 @@
 @echo off
 setlocal
 
-set VERSION=1.0.0
+set VERSION=1.0.1
 set OUTPUT=dist
 
 :: Build Parameters
-set NoGUIWindow=-H=windowsgui
 set StripDebugInfo=-s -w
-set LDFLAGS_PARAMETERS=%NoGUIWindow% %StripDebugInfo%
+set LDFLAGS_PARAMETERS=%StripDebugInfo%
 
 echo.
 echo +--------------------------------+
@@ -26,7 +25,7 @@ if ["%LDFLAGS_PARAMETERS%"]==[""] (
 )
 
 :: Remove Previous Build
-del %OUTPUT% /q >nul
+del %OUTPUT% /q 2>nul
 
 
 :: Create Syso files

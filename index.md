@@ -1,6 +1,4 @@
-## AutoSubFixer
-
-### About
+## About
 If you live in a country whose language doesn't use the common and well-known latin alphabet, you have probably seen movie players or streamers that couldn't show your subtitles correctly.
 
 By automatically identifying the encoding of your subtitles, AutoSubFixer can fix the encoding to the most common encoding (UTF-8), which is globally supported by most modern media players.
@@ -64,7 +62,7 @@ You can also drag-and-drop your text files to the executable or its shortcut.
 
 
 ### Command-line Interface
-```bash
+```sh
 $ .\autosubfixer --help
 Usage of autosubfixer:
   -debug
@@ -77,19 +75,19 @@ Usage of autosubfixer:
 
 #### Simple usage
 Auto-detects the encoding, and creates a new file `file-encoded.srt` in the same directory.
-```bash
+```sh
 $ .\autosubfixer file.srt
 ```
 
 #### Specify source-encoding
 In cases where it doesn't correctly detect the encoding, you can specify the source encoding manually (e.g. windows-1255, ISO-8859-8):
-```bash
+```sh
 $ .\autosubfixer -from-encoding windows-1255 file.srt
 ```
 
 #### Override the original file
 If you don't want to create the new `*-encoded` file, you can use `-override` to overwrite the original file (can't be undone):
-```bash
+```sh
 $ .\autosubfixer -override file.srt
 ```
 
@@ -98,38 +96,3 @@ $ .\autosubfixer -override file.srt
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mmgordon82/AutoSubFixer/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.

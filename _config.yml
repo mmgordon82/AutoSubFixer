@@ -36,13 +36,6 @@ social: # jekyll-seo-tag > social overrides
 
 # 5. Collections
 collections:
-  posts:
-    title: Posts # Needed for Siteleaf
-    output: true
-    description: "My thoughts and ideas" # The post list page content
-    feature_text: |
-      Welcome to the blog
-    feature_image: "https://picsum.photos/2560/600?image=866"
 
 # 6. Jekyll collections settings
 defaults:
@@ -69,10 +62,10 @@ encoding: utf-8 # Make sure the encoding is right
 lang: en-GB # Set the site language
 title: "AutoSubFixer" # Site name or title, also used in jekyll-seo-tag
 logo: "assets/logo.png" # Site logo, also used in jekyll-seo-tag
-description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
-url: "https://alembic.darn.es" # Site url, also used in jekyll-seo-tag
+description: "AutoSubFixer is the one-stop cross-platform solution for gibbrish-replaced letters and other encoding problems that are common among users who download subtitles from 3rd-party sources." # Site description and default description, also used in jekyll-seo-tag
+url: "https://mmgordon82.github.io/AutoSubFixer/" # Site url, also used in jekyll-seo-tag
 baseurl: ""
-repo: "https://github.com/daviddarnes/alembic"
+repo: "https://github.com/mmgordon82/AutoSubFixer"
 email: "me@daviddarnes.com"
 # disqus: "alembic-1" # Blog post comments, uncomment the option and set the site ID from your Disqus account
 # date_format: "%-d %B %Y" # Blog post date formatting using placeholder formatting

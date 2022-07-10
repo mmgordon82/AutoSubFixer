@@ -3,7 +3,7 @@ title: AutoSubFixer
 feature_text: |
   ## AutoSubFixer
   Easily auto-detect and correct encoding problems in text files
-feature_image: "/assets/background.jpg"
+feature_image: "assets/background.jpg"
 excerpt: "AutoSubFixer is the one-stop cross-platform solution for gibbrish-replaced letters and other encoding problems that are common among users who download subtitles from 3rd-party sources."
 ---
 

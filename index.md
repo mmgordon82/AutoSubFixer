@@ -1,11 +1,13 @@
 ---
 title: AutoSubFixer
 feature_text: |
-  ## AutoSubFixer
+  # AutoSubFixer
   Easily auto-detect and correct encoding problems in text files
 feature_image: "assets/background.jpg"
 excerpt: "AutoSubFixer is the one-stop cross-platform solution for gibbrish-replaced letters and other encoding problems that are common among users who download subtitles from 3rd-party sources."
 ---
+
+{% include button.html text="Github" icon="github" link="https://github.com/mmgordon82/AutoSubFixer" color="#0366d6" %} {% include button.html text="Download Installer (Win)" link="https://github.com/mmgordon82/AutoSubFixer/releases/download/v1.0.1/AutoSubFixer-1.0.1-Installer-win.exe" color="#81B4F7" %} {% include button.html text="Download Portrable (Win)" link="https://github.com/mmgordon82/AutoSubFixer/releases/download/v1.0.1/AutoSubFixer-Portable.exe" color="#81B4F7" %} {% include button.html text="Download for Linux/MacOS" link="https://github.com/mmgordon82/AutoSubFixer/releases/latest" color="#FFB67B" %}
 
 ## About
 If you live in a country whose language doesn't use the common and well-known latin alphabet, you have probably seen movie players or streamers that couldn't show your subtitles correctly.

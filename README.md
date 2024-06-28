@@ -104,7 +104,7 @@ You can also drag-and-drop your text files to the executable or its shortcut.
 
 ### Command-line Interface
 ```bash
-$ .\autosubfixer --help
+$ ./autosubfixer --help
 Usage of autosubfixer:
   -debug
         Print debug information (and save to a .log file in current working directory)
@@ -117,19 +117,19 @@ Usage of autosubfixer:
 #### Simple usage
 Auto-detects the encoding, and creates a new file `file-encoded.srt` in the same directory.
 ```bash
-$ .\autosubfixer file.srt
+$ ./autosubfixer file.srt
 ```
 
 #### Specify source-encoding
 In cases where it doesn't correctly detect the encoding, you can specify the source encoding manually (e.g. windows-1255, ISO-8859-8):
 ```bash
-$ .\autosubfixer -from-encoding windows-1255 file.srt
+$ ./autosubfixer -from-encoding windows-1255 file.srt
 ```
 
 #### Override the original file
 If you don't want to create the new `*-encoded` file, you can use `-override` to overwrite the original file (can't be undone):
 ```bash
-$ .\autosubfixer -override file.srt
+$ ./autosubfixer -override file.srt
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
